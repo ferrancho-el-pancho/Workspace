@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
-cuadrados=[1,4,9,16,25]
+#cuadrados=[1,4,9,16,25]
+cuadrados = [num**2 for num in range(1, 101)]
 fig, ax = plt.subplots()
 ax.plot(cuadrados)
 
