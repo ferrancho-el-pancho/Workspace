@@ -8,14 +8,14 @@ with open(nombreFichero) as f:
 todos_los_diccionarios = todos_los_datos['features']
 
 magnitudes, longitudes, latitudes = [], [], []
-for eq_dict in todos_los_diccionarios:
-    magnitudes = eq_dict['properties']['mag']
-    longitudes = eq_dict['geometry']['coordinates'][0]
-    latitudes = eq_dict['geometry']['coordinates'][1]
-    magnitudes.append(mag)
-    longitudes.append(lon)
-    latitudes.append(lat)
+for diccionario_termometros in todos_los_diccionarios:
+    magnitud = diccionario_termometros['properties']['mag']
+    longitud = diccionario_termometros['geometry']['coordinates'][0]
+    latitud = diccionario_termometros['geometry']['coordinates'][1]
+    magnitudes.append(magnitud)
+    longitudes.append(longitud)
+    latitudes.append(latitud)
 
 print(magnitudes[:10])
-#print(longitudes[:5])
-#print(latitudes[:5])
+print(longitudes[:5])
+print(latitudes[:5])

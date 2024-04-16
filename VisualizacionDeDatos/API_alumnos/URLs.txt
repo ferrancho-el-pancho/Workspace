@@ -1,0 +1,16 @@
+https://api.github.com/search/repositories?q=language:python&sort=starts
+
+pip3 install requests
+
+Hacker news
+https://news.ycombinator.com/
+
+API de hacker news
+https://hacker-news.firebaseio.com/v0/item/19155826.json
+
+https://www.aemet.es/es/datos_abiertos/AEMET_OpenData
+
+Ejemplos:
+https://api.tutiempo.net/json.html
+
+https://developers.strava.com/
