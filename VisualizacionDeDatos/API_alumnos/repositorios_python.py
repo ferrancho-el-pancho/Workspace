@@ -6,13 +6,17 @@ cabeceras = {'Accept': 'application/vnd.github.v3+json'}
 r = requests.get(url, headers=cabeceras)
 print(f"Código de estado: {r.status_code}")
 
+
 # Almacena en una variable la respuesta de la API.
 diccionario_respuesta = r.json()
 print(f"Repositorios totales: {diccionario_respuesta['total_count']}")
+#print(diccionario_respuesta)
 
 # Explora informacion sobre los repositorios.
 diccionarios_repositorio = diccionario_respuesta['items']
 print(f"Repositories returned: {len(diccionarios_repositorio)}")
+
+
 
 print("\nInformación seleccionada sobre cada repositorio:")
 for diccionario_repo in diccionarios_repositorio:
