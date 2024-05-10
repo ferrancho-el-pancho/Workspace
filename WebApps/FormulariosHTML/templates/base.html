@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/estilos.css')}}">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Ejemplo de formularios HTML con <span class="alternate_colour">Flask</span></h1>
+      </div>
+      
+    </div>
+    <div id="site_content">
+      <div id="content">
+        {% block content %}{% endblock %}
+        </div>
+    </div>
+  </div>
+</body>
+</html>

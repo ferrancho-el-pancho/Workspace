@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    {% for articulo in articulos: %}
+      {% if articulo["id"]==2 %}
+        <h1>{{ articulo["title"] }}</h1>
+        <h2>{{ articulo["subtitle"] }}</h2>
+        <p>{{articulo['body']}}</p>
+       {% endif %} 
+    {% endfor %}
+</body>
+</html>
